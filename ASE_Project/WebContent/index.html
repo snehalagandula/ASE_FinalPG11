@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ <script>
+ $(document).ready(function() { 
+	 $('#button').click(function() {  
+		 $.get('Sample', function(responseText) {
+			 $('#somediv').text(responseText);
+		 });
+     });
+ });
+		 }
+	 }
+ }
+ </script>
+</head>
+  <body>
+        <button id="button">Submit</button>
+      <div id="somediv"></div>
+    </body>
+</html>
